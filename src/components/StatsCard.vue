@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-neutral-white w-[480px] h-52 rounded-lg border border-solid border-neutral-500 flex flex-col justify-between p-4">
+    <div class="bg-neutral-white w-[480px] h-52 rounded-2xl border border-solid border-neutral-500 flex flex-col justify-between p-4">
         <div class="flex flex-row justify-between">
             <div class=" font-medium text-md text-neutral-black ">Total Income</div>
             <div class="font-medium text-md text-neutral-700">Jan. 04 2024</div>

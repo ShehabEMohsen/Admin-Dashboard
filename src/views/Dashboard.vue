@@ -11,11 +11,15 @@
                 <StatsCard/>
                 <StatsCard/>
             </div>
+            <div class="mt-12">
+                <HomeBarGraph/>
+            </div>
         </div>
     </div>
 </template>
 <script setup lang="ts">
 import Sidebar from '../components/Sidebar.vue';
-import StatsCard from '../components/StatsCard.vue'
+import StatsCard from '../components/StatsCard.vue';
+import HomeBarGraph from '../components/HomeBarGraph.vue'
 </script>
 <style></style>
