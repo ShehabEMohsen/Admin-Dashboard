@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-neutral-white border border-solid border-neutral-500 w-72 h-screen pt-8 flex flex-col">
+    <div class="bg-neutral-white border border-solid border-neutral-500 w-60 h-screen pt-8 flex flex-col fixed z-10 top-0 left-0 ">
         <div class="font-semibold text-4xl bg-gradient-to-r from-purple-main to-main-900 text-transparent bg-clip-text mb-4 ml-8">Admoon</div>
         <hr/>
         <div class="main-choices mt-8 ml-8 font-medium text-xl">
