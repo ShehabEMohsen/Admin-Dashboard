@@ -13,8 +13,9 @@
             </div>
             <div class="mt-12 flex items-center">
                 <HomeBarGraph/>
-                <div class="w-full h-96 ml-8">
-                    <Calendar :min-date="new Date()" :attributes="attributes" style="height:100%; width:100%; padding-top: 20px; padding-left: 10px; padding-right: 10px" expanded/>
+                <div class="w-1/3 h-96 ml-8">
+                    <Calendar :v-model="new Date()" :min-date="new Date()" :attributes="attributes" style="height:100%; width:100%; padding: 0;" class="full-calendar" expanded/>
+                    
                 </div>
             </div>
             <div class="mt-12 pb-12">
@@ -70,4 +71,34 @@ const attributes = ref([
 
 </script>
 <style>
+.full-calendar .vc-header,
+.full-calendar .vc-weekday,
+.full-calendar .vc-day {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.full-calendar .vc-calendar{
+  background-color: white;
+}
+
+.full-calendar .vc-day {
+    padding: 10px;
+}
+
+.full-calendar .vc-day-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.full-calendar .vc-content {
+    padding: 10px;
+}
+.full-calendar .vc-arrow,
+.full-calendar .vc-title {
+  background: transparent;
+  color: black;
+  border: none;
+}
 </style>
