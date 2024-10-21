@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full bg-neutral-white rounded-2xl h-96 p-8 border border-solid border-neutral-500 ">
+    <div class="w-full bg-neutral-white rounded-2xl h-full p-8 border border-solid border-neutral-500 overflow-auto">
         <div class="flex flex-row items-center justify-between">
             <div class="shadow-md shadow-neutral-700 w-12 h-12 p-2 flex justify-center rounded-lg">
                 <img src="../assets/patients.svg"/>
@@ -16,6 +16,7 @@
         <div class="mt-8">
             <table class="w-full h-full">
                 <tr class="text-neutral-700 text-start w-full  border-solid border-b-2 border-neutral-500">
+                    <td><input type="checkbox" disabled/></td>
                     <td>No</td>
                     <td>ID</td>
                     <td>Patient Name</td>
@@ -29,6 +30,7 @@
                 </tr>
                 
                 <tr v-for="(patient, index) in data" :key="index" class="h-12">
+                    <td><input type="checkbox"/></td>
                     <td>{{ index+1 }}</td>
                     <td>{{ patient.ID }}</td>
                     <td>{{ patient.name }}</td>

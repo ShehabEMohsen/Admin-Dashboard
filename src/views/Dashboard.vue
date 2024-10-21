@@ -1,25 +1,27 @@
 <template>
-    <div class="flex">
+    <div class="flex w-screen">
         <Sidebar/>
         <div class='mt-12 w-full ml-72'>
             <div class="flex flex-row justify-between">
                 <div class="text-neutral-black font-semibold text-4xl ">Dashboard</div>
                 <div>Notification</div>
             </div>
-            <div class="mt-12 flex justify-between w-full">
-                <StatsCard/>
-                <StatsCard/>
-                <StatsCard/>
-            </div>
-            <div class="mt-12 flex items-center">
-                <HomeBarGraph/>
-                <div class="w-1/3 h-96 ml-8">
-                    <Calendar :v-model="new Date()" :min-date="new Date()" :attributes="attributes" style="height:100%; width:100%; padding: 0;" class="full-calendar" expanded/>
-                    
-                </div>
-            </div>
-            <div class="mt-12 pb-12">
-              <HomePatients/>
+            <div class="overflow-hidden">
+              <div class="mt-12 flex justify-between w-full">
+                  <StatsCard/>
+                  <StatsCard/>
+                  <StatsCard/>
+              </div>
+              <div class="mt-12 flex items-center">
+                  <HomeBarGraph/>
+                  <div class="w-1/3 h-96 ml-8">
+                      <Calendar :v-model="new Date()" :min-date="new Date()" :attributes="attributes" style="height:100%; width:100%; padding: 0;" class="full-calendar" expanded/>
+                      
+                  </div>
+              </div>
+              <div class="mt-12 pb-12">
+                <HomePatients :data="patientData"/>
+              </div>
             </div>
         </div>
     </div>
@@ -29,6 +31,7 @@ import Sidebar from '../components/Sidebar.vue';
 import StatsCard from '../components/StatsCard.vue';
 import HomeBarGraph from '../components/HomeBarGraph.vue'
 import HomePatients from '../components/HomePatients.vue';
+import {patientData} from '../components/patientData.ts'
 
 import { Calendar, DatePicker } from 'v-calendar';
 import 'v-calendar/style.css';
