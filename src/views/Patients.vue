@@ -1,13 +1,13 @@
 <template>
-    <div class="flex w-screen h-screen">
+    <div class="w-screen">
         <Sidebar/>
-        <div class="ml-72 w-full mt-12">
+        <div class="ml-72 w-4/5 mt-12">
             <div class="flex flex-row justify-between ">
                 <div class="text-neutral-black font-semibold text-4xl ">Patients</div>
                 <div>Notification</div>
             </div>
-            <div class="mt-8 mb-4 flex justify-between w-1/6 ml-auto">
-                <Button text="Add" color="#7687FA"/>
+            <div class="mt-8 mb-4 flex justify-between w-1/6 ml-auto gap-4">
+                <Button text="Add" color="#7687FA" />
                 <Button text="Remove" color="#CD0404"/>
             </div>
             <div class="">

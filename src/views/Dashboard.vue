@@ -1,7 +1,7 @@
 <template>
-    <div class="flex w-screen">
+    <div class="w-screen">
         <Sidebar/>
-        <div class='mt-12 w-full ml-72'>
+        <div class='mt-12 w-4/5 ml-72'>
             <div class="flex flex-row justify-between">
                 <div class="text-neutral-black font-semibold text-4xl ">Dashboard</div>
                 <div>Notification</div>
@@ -40,7 +40,6 @@ import { ref } from 'vue';
 const date = new Date();
 const attributes = ref([
   {
-    // Boolean
     dot: true,
     dates: [
       new Date(2024, 10, 1),
@@ -49,7 +48,6 @@ const attributes = ref([
     ],
   },
   {
-    // String
     dot: 'red',
     dates: [
       new Date(2024, 10, 4),
@@ -58,7 +56,6 @@ const attributes = ref([
     ],
   },
   {
-    // Object
     dot: {
       style: {
         backgroundColor: 'brown',

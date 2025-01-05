@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full bg-neutral-white rounded-2xl h-full p-8 border border-solid border-neutral-500 overflow-auto">
+    <div class="w-full max-h-screen bg-neutral-white rounded-2xl h-full p-8 border border-solid border-neutral-500 overflow-auto overflow-y-scroll">
         <div class="flex flex-row items-center justify-between">
             <div class="shadow-md shadow-neutral-700 w-12 h-12 p-2 flex justify-center rounded-lg">
                 <img src="../assets/patients.svg"/>

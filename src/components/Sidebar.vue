@@ -29,7 +29,6 @@
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 import DashboardIcon from '../assets/dashboard.svg';
-import MessagesIcon from '../assets/chat.svg';
 import StatsIcon from '../assets/stats.svg';
 import PatientsIcon from '../assets/patients.svg';
 import AppointmentsIcon from '../assets/appointments.svg';
@@ -37,8 +36,7 @@ import AppointmentsIcon from '../assets/appointments.svg';
 const chosen = ref<number | null>(0);
 const mainChoices = ref([
   { name: 'Dashboard', icon: DashboardIcon, link: '/' },
-  { name: 'Messages', icon: MessagesIcon, link: '#' },
-  { name: 'Statistics', icon: StatsIcon, link: '#' },
+  { name: 'Statistics', icon: StatsIcon, link: '/stats' },
   { name: 'Patients', icon: PatientsIcon, link: '/patients' },
   { name: 'Appointments', icon: AppointmentsIcon, link: '#' }
 ]);
