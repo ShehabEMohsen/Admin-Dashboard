@@ -2,9 +2,9 @@
     <div class="w-screen">
         <Sidebar/>
         <div class='mt-12 w-4/5 ml-72'>
-            <div class="flex flex-row justify-between">
+            <div class="flex flex-row justify-between bg-neutral-300">
                 <div class="text-neutral-black font-semibold text-4xl ">Dashboard</div>
-                <div>Notification</div>
+                <div class="bg-neutral-white p-2 rounded-2xl shadow-md cursor-pointer"><img src='../assets/notification.svg'/></div>
             </div>
             <div class="overflow-hidden">
               <div class="mt-12 flex justify-between w-full">
@@ -36,35 +36,28 @@ import {patientData} from '../components/patientData.ts'
 import { Calendar, DatePicker } from 'v-calendar';
 import 'v-calendar/style.css';
 import { ref } from 'vue';
-
-const date = new Date();
 const attributes = ref([
   {
-    dot: true,
+    dot: '#4E55DA',
     dates: [
-      new Date(2024, 10, 1),
-      new Date(2024, 10, 10),
-      new Date(2024, 10, 22),
-    ],
-  },
-  {
-    dot: 'red',
-    dates: [
-      new Date(2024, 10, 4),
-      new Date(2024, 10, 10),
-      new Date(2024, 10, 15),
+      new Date(2025, 0, 4),
+      new Date(2025, 0, 10),
+      new Date(2025, 0, 15),
+      new Date(2025, 0, 15),
     ],
   },
   {
     dot: {
       style: {
-        backgroundColor: 'brown',
+        backgroundColor: '#763CEB',
       },
     },
     dates: [
-      new Date(2024, 10, 12),
-      new Date(2024, 10, 26),
-      new Date(2024, 10, 15),
+      new Date(2025, 0, 12),
+      new Date(2025, 0, 12),
+      new Date(2025, 0, 12),
+      new Date(2025, 0, 26),
+      new Date(2025, 0, 15),
     ],
   },
 ]);

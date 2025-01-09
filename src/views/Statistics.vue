@@ -4,7 +4,7 @@
         <div class="ml-72 w-4/5 mt-12">
             <div class="flex flex-row justify-between  mb-12">
                 <div class="text-neutral-black font-semibold text-4xl ">Statistics</div>
-                <div>Notification</div>
+                <div class="bg-neutral-white p-2 rounded-2xl shadow-md cursor-pointer"><img src='../assets/notification.svg'/></div>
             </div>
             <div class="flex gap-12">
                 <PieChart/>

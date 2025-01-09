@@ -35,10 +35,10 @@ import AppointmentsIcon from '../assets/appointments.svg';
 
 const chosen = ref<number | null>(0);
 const mainChoices = ref([
-  { name: 'Dashboard', icon: DashboardIcon, link: '/' },
-  { name: 'Statistics', icon: StatsIcon, link: '/stats' },
-  { name: 'Patients', icon: PatientsIcon, link: '/patients' },
-  { name: 'Appointments', icon: AppointmentsIcon, link: '#' }
+  { id: 1 , name: 'Dashboard', icon: DashboardIcon, link: '/', current: true },
+  { id: 2 , name: 'Statistics', icon: StatsIcon, link: '/stats', current: false },
+  { id: 3 , name: 'Patients', icon: PatientsIcon, link: '/patients', current: false },
+  { id: 4 , name: 'Appointments', icon: AppointmentsIcon, link: '/appointments', current: false }
 ]);
 
 const router = useRouter();
